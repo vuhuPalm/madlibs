@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  h1 Enter Your Words
+  form(method="POST" action="/story" id="words")
+    label(for="noun0") Day of the Week:
+    input(type="text" name="noun0" id="noun0" value=`${noun0}`)
+    br
+    label(for="noun1") Noun:
+    input(type="text" name="noun1" id="noun1" value=`${noun1}`)
+    br
+    label(for="noun2") Name of Person:
+    input(type="text" name="noun2" id="noun2" value=`${noun2}`)
+    br
+    label(for="noun3") Second Noun:
+    input(type="text" name="noun3" id="noun3" value=`${noun3}`)
+    br
+    label(for="noun4") Third Noun:
+    input(type="text" name="noun4" id="noun4" value=`${noun4}`)
+    br
+    label(for="noun5") Fifth Noun:
+    input(type="text" name="noun5" id="noun5" value=`${noun5}`)
+    br
+    label(for="noun6") Person's Name:
+    input(type="text" name="noun6" id="noun6" value=`${noun6}`)
+    br
+    label(for="noun7") Sixth Noun:
+    input(type="text" name="noun7" id="noun7" value=`${noun7}`)
+    br
+    label(for="noun8") Plural of Noun:
+    input(type="text" name="noun8" id="noun8" value=`${noun8}`)
+    br
+    label(for="verb1") Verb:
+    input(type="text" name="verb1" id="verb1" value=`${verb1}`)
+    br
+    label(for="verb0") Container:
+    input(type="text" name="verb0" id="verb0" value=`${verb0}`)
+    br
+    label(for="adjective1") Adjective:
+    input(type="text" name="adjective1" id="adjective1" value=`${adjective1}`)
+    br
+    label(for="adjective2") Second Adjective:
+    input(type="text" name="adjective2" id="adjective2" value=`${adjective2}`)
+    br
+    label(for="verb2") Second Verb:
+    input(type="text" name="verb2" id="verb2" value=`${verb2}`)
+    br
+    label(for="adjective0") Animal:
+    input(type="text" name="adjective0" id="adjective0" value=`${adjective0}`)
+  label(for="storyChoice") Choose One
+  select(form="words" name="storyChoice" id="storyChoice")
+      option(value = "1") Easter
+      option(value = "2") Lunch Room
+      option(value = "3") Apples
+  br
+  button(type="submit" form="words") Tell Me a Story
